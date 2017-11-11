@@ -1,3 +1,9 @@
+"""
+This file implements simple linear regression with one variable. Output Y is plotted against one feature X.
+MSE and R^2 are calculated to determine how well model fits in.
+
+Example from sklearn site: http://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html#sphx-glr-auto-examples-linear-model-plot-ols-py
+"""
 import matplotlib
 matplotlib.use('TkAgg')
 
@@ -25,8 +31,8 @@ prediction = regression.predict(x_test)
 
 #Calculate mean squared error, variance and coefficients
 print("COEFFICIENTS : {}".format(regression.coef_))
-print("MEAN SQUARED ERROR : {}".format(mean_squared_error(y_test, prediction)))
-print("VARIANCE SCORE : {}".format(r2_score(y_test, prediction)))
+print("MEAN SQUARED ERROR : {}".format(mean_squared_error(y_test, prediction))) #MSE
+print("VARIANCE SCORE : {}".format(r2_score(y_test, prediction))) #R-2
 
 #Plot the training sample and regression line
 plt.scatter(x_train, y_train, color="red")
