@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 from .perceptron import SimplePerceptron
-from .util import plot_decision_regions
+from util import plot_decision_regions
 
 df =  pd.read_csv('https://archive.ics.uci.edu/ml/'
         'machine-learning-databases/iris/iris.data', header=None)

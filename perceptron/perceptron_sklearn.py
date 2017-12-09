@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.linear_model import Perceptron
 import numpy as np
 
-from .util import plot_decision_regions
+from util import plot_decision_regions
 
 iris = datasets.load_iris()
 x = iris.data[:,[2,3]]
